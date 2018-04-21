@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>socket</key>
+			<string>/Applications/MAMP/tmp/mysql/mysql.sock</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeACldpdGVtX2lk0h4fLS5f
+			EA9OU011dGFibGVTdHJpbmejLS8jWE5TU3RyaW5n0h4fMTJeTlNN
+			dXRhYmxlQXJyYXmjMTMjV05TQXJyYXnSHh8iNaIiI18QD05TS2V5
+			ZWRBcmNoaXZlctE4OVRkYXRhgAEACAARABoAIwAtADIANwBFAEsA
+			UgBaAGUAbABwAHIAdAB2AHoAfAB+AIAAggCHAIwAkQC6AMEAwgDD
+			AMUAygDVAN4A9AD4AQUBDgETARUBFwEZAR4BKAEqATIBNwFJAU0B
+			VgFbAWoBbgF2AXsBfgGQAZMBmAAAAAAAAAIBAAAAAAAAADoAAAAA
+			AAAAAAAAAAAAAAGa
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {655, 627}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>CREATE database bamazon;
+
+USE bamazon;
+
+CREATE table products (
+item_id INT NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (item_id)
+);
+
+/* DELETE FROM products WHERE item_id = 0 and product_name = "Subaru Impreza" */
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES 
+("Subaru Impreza", "Cars", 20000, 1),
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1);
+
+</string>
+			<key>table</key>
+			<string>products</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>145</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>ALTER TABLE products
+MODIFY COLUMN item_idI NT NOT NULL AUTO_INCREMENT</string>
+		<string>USE bamazon;
+CREATE table products2 (
+item_id INT NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (item_id)
+);
+/* DELETE FROM products WHERE item_id = 0 and product_name = "Subaru Impreza" */
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES 
+("Subaru Impreza", "Cars", 20000, 1),
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>DELETE table products</string>
+		<string>table products</string>
+		<string>INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES 
+("Subaru Impreza", "Cars", 20000, 1),
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>DELETE FROM products WHERE item_id = 0 and product_name = "Subaru Impreza"</string>
+		<string>CREATE table products (
+item_id INT NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (item_id)
+)</string>
+		<string>INSERT INTO products (item_id,product_name, department_name, price, stock_quantity)
+VALUES 
+("Subaru Impreza", "Cars", 20000, 1),
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES 
+("Subaru Impreza", "Cars", 20000, 1);
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>DELETE FROM products item_id=0</string>
+		<string>CREATE table products_list (
+item_id INT NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (item_id)
+);
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES 
+("Subaru Impreza", "Cars", 20000, 1)</string>
+		<string>INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>INSERT INTO products (product_name, department_name, price, stock_quantity)
+("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>("MacBook Air", "Electronics", 1000, 5),
+("Patagonia Ski Jacket", "Clothing", 150, 1),
+("Sperry Topsiders", "Apparel", 60, 10),
+("Anon Ski Goggles", "Eyewear", 100, 2),
+("Ray-Ban Clubmaster Glasses", "Eyewear", 150, 1),
+("LG 60 inch 4K TV", "Electronics", 600, 3),
+("Audio-Technica Headphones", "Electronics", 150, 5),
+("Hornbeck 10 foot canoe", "Boats", 1500, 2),
+("Boston Whaler 13 foot", "Boats", 5000, 1)</string>
+		<string>item_id INT NOT NULL AUTO_INCREMENT,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (item_id)
+)</string>
+		<string>INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Subaru Impreza", "Cars", 20000, 1)</string>
+		<string>CREATE table products (
+item_id INT NOT NULL,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (item_id)
+)</string>
+		<string>CREATE table products (
+item_id INT NOT NULL,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock_quantity INT NOT NULL,
+PRIMARY KEY (position)
+)</string>
+		<string>CREATE database bamazon;
+USE bamazon;
+CREATE table products (
+item_id INT NOT NULL,
+product_name VARCHAR(100) NULL,
+department_name VARCHAR (100) NULL,
+price DECIMAL(10,4) NULL,
+stock quantity INT NOT NULL,
+PRIMARY KEY (position)
+)</string>
+		<string>SELECT * FROM top5000</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.35</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
